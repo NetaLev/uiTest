@@ -1,0 +1,64 @@
+#topnav {
+    background-color: white;
+    position:relative;
+    top:0;
+    border-bottom-color: #dadee7;
+    padding-bottom:1px; border-bottom: 1px solid #ccc;
+}
+
+.glyphicon {
+    padding-top: 5px;
+    color:black;
+    font-size: 1.5em; 
+}
+
+.glyphicon-menu-hamburger:hover {
+    color:#5584ff;
+}
+
+.glyphicon-on-button {
+    color: #aac2ff;
+    padding-top: 0px;
+    font-size: 1.0em; 
+}
+
+.topnav-button {
+    border-radius: 15px;
+    background-color: #5584ff;
+    color: white;
+    border: 0px;
+}
+.topnav-button:hover {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.ul-left {
+    float:left;
+}
+ul.ul-right{
+    float:right
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.user-img {
+    height: 40px;
+    width: 40px;
+}

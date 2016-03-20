@@ -1,0 +1,52 @@
+<!--TODO: add functionality to selected class for current sidebar page (using ng-class, ng-click)-->
+<!--TODO: implement ng-repeat for all repeating elements in sidebar, topbar directives-->
+<!--TODO: topnav: add css icon decorations (badges etc.)-->
+<!--TODO: add html5 keys: section, aside, header, footer etc.-->
+<!DOCTYPE html>
+<html lang="en" ng-app="uiTest">
+
+<head>
+    <title>UI Developers Test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--INFO: this meta is to scale bootstrap layout properly on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS:   Latest compiled and minified CSS  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--    Roboto- Google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="index.css" rel="stylesheet">
+    <link href="css/custom-sidenav.css" rel="stylesheet">
+    <link href="css/custom-topnav.css" rel="stylesheet">
+    <!-- load angular via CDN -->
+    <script src="https://code.angularjs.org/1.5.2/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.2/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.2/angular-resource.min.js"></script>
+    <!--uiTest scripts-->
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid nopadding">
+        <div ng-controller="mainController" class="main-row row nopadding">
+            <!--TODO: remove hidden-xs class when coresponding button is clicked (using ng-class, ng-click)-->
+            <div class="left-main-column col-sm-3 col-lg-2 hidden-xs nopadding">
+                <d-sidenav-header></d-sidenav-header>
+                <d-sidenav></d-sidenav>
+            </div>
+            <div class="left-main-col col-sm-9 col-lg-10">
+                <d-topnav></d-topnav>
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+    <!-- INFO: JS files are placed at the end of the document so the pages load faster -->
+    <!-- jQuery core JavaScript: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript:   Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+
+</html>

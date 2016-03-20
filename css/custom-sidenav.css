@@ -1,0 +1,84 @@
+.left-main-column > div {
+    background-color: #0e1a35;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+
+.devider {
+    height:2px !important; 
+    background-color: #0d172e !important;
+}
+
+#logo-row {
+    height: 10%;
+}
+
+#sidenav-row {
+    height: 90%;
+}
+
+#logo-image {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    max-width:85%;
+    max-height:100%;
+}
+
+/* INFO:
+xs= 0-767 pixels
+sm = 768-991 pixels
+md = 992-1199 pixels
+lg = 1200 pixels and up */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .left-main-column {height:100%;}
+    
+}
+
+.sidebar-icon {
+    padding-right: 15px;
+    height: 18px;
+    
+}
+
+/*TODO: keep only for what i need for topnav*/
+.w3-navbar a,.w3-topnav a,.w3-sidenav a,.w3-dropnav a,.w3-dropdown-content a,.w3-accordion-content a{text-decoration:none !important}
+.w3-navbar .w3-opennav.w3-right{float:right !important}
+
+.w3-navbar a,.w3-topnav a,.w3-sidenav a,.w3-dropnav a,.w3-pagination li a,.w3-hoverable tbody tr,.w3-btn,.w3-btn-floating,.w3-btn-floating-large,.w3-hover-opacity,.w3-hover-shadow,.w3-accordion-content a,.w3-dropdown-content a,.w3-dropdown-click:hover,.w3-dropdown-hover:hover,.w3-opennav,.w3-closenav,.w3-closebtn,
+.w3-hover-amber,.w3-hover-aqua,.w3-hover-blue,.w3-hover-light-blue,.w3-hover-brown,.w3-hover-cyan,.w3-hover-blue-grey,.w3-hover-green,.w3-hover-light-green,.w3-hover-indigo,.w3-hover-khaki,.w3-hover-lime,.w3-hover-orange,.w3-hover-deep-orange,.w3-hover-pink,
+.w3-hover-purple,.w3-hover-deep-purple,.w3-hover-red,.w3-hover-sand,.w3-hover-teal,.w3-hover-yellow,.w3-hover-white,.w3-hover-black,.w3-hover-grey,.w3-hover-light-grey,.w3-hover-dark-grey,.w3-hover-text-amber,.w3-hover-text-aqua,.w3-hover-text-blue,.w3-hover-text-light-blue,
+.w3-hover-text-brown,.w3-hover-text-cyan,.w3-hover-text-blue-grey,.w3-hover-text-green,.w3-hover-text-light-green,.w3-hover-text-indigo,.w3-hover-text-khaki,.w3-hover-text-lime,.w3-hover-text-orange,.w3-hover-text-deep-orange,.w3-hover-text-pink,.w3-hover-text-purple,
+.w3-hover-text-deep-purple,.w3-hover-text-red,.w3-hover-text-sand,.w3-hover-text-teal,.w3-hover-text-yellow,.w3-hover-text-white,.w3-hover-text-black,.w3-hover-text-grey,.w3-hover-text-light-grey,.w3-hover-text-dark-grey
+{-webkit-transition:all 0.3s ease,color 0.15s ease;transition:all 0.3s ease,color 0.15s ease}
+
+.w3-sidenav a:focus, {
+    outline: none;
+}
+.w3-sidenav a { /*INFO: order: top, right, bottom, left*/
+    padding:18px 2px 18px 30px;
+    color: white;
+}
+
+/*TODO: check syntax to write the above identical rules together*/
+.w3-sidenav a.selected {
+    background-color:#122143; 
+    border-left-style: solid;
+    border-left-width: 8px;
+    border-left-color: #5584ff;
+}
+.w3-sidenav a:hover{
+    background-color:#122143; 
+    border-left-style: solid;
+    border-left-width: 8px;
+    border-left-color: #5584ff;
+}
+
+.w3-sidenav a,.w3-dropnav a{display:block}
+.w3-sidenav .w3-dropdown-hover:hover,.w3-sidenav .w3-dropdown-hover:first-child,.w3-sidenav .w3-dropdown-click:hover{background-color:#ccc;color:#000}
+
+.w3-sidenav .w3-dropdown-hover,.w3-sidenav .w3-dropdown-click {width:100%}.w3-sidenav .w3-dropdown-hover .w3-dropdown-content,.w3-sidenav .w3-dropdown-click .w3-dropdown-content{min-width:100%}
+
+@media screen and (max-width:991px){.w3-sidenav.w3-collapse{display:none}.w3-main{margin-left:0 !important}}
+@media screen and (min-width:991px){.w3-sidenav.w3-collapse{display:block !important}}

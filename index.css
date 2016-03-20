@@ -1,0 +1,19 @@
+html,body,.container-fluid, .main-row {height:100%;}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.left-main-col {
+    background-color: #f6f7fa;
+    height: 100%;
+}
+
+.panel-heading {
+    background-color: white !important;
+}
